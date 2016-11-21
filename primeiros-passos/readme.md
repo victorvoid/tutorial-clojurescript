@@ -35,6 +35,10 @@ user=> (+ 1 2) ;; isso é um comentário em clojure
 
 Basicamente o **+** é uma função que recebeu o 1 e 2 como parâmetro e cuspiu o resultado da soma. Bonito não é?
 
-Mas não vamos ficar codando em um REPL e sim num Editor/IDE, por isso precisa ter uma com um bom suporte, para avaliar cada expressão.
+Mas não vamos ficar codando em um REPL no terminal e sim num Editor/IDE, por isso você precisa ter um com um bom suporte, para avaliar cada expressão.
 
-Agora abra o arquivo **primeiros-passos.clj**.
+Como o emacs por exemplo:
+
+![](https://i.stack.imgur.com/ptdJP.gif)
+
+Agora abra o arquivo [primeiros-passos.clj](https://github.com/victorvoid/aprenda-clojurescript/blob/master/primeiros-passos/primeiros-passos.clj).
