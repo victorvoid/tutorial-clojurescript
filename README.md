@@ -24,11 +24,13 @@ o javascript final. Porém ele é um dialeto de Clojure, vale lembrar que não �
 
 ## Como vai funcionar o tutorial ?
 
-O repositório contém alguns arquivos **.cljs**, você irá clonar esse repositório e então abrir os arquivos 
+O repositório contém alguns arquivos **.cljs** e projetos, você irá clonar esse repositório e então abrir os arquivos 
 com um Editor ou IDE, e que por acaso não é qualquer um, todos tem syntax highlight, porém precisa de uma 
-integração boa com o terminal. Aconselho usar a IDE da JetBrains com o plugin Cursive, Emacs com 
-Spacemacs colocando a layer de clojure ou o LightTable,
-que é bem simples de utilizar.
+integração boa com o terminal. Aconselho usar a IDE da JetBrains com o plugin Cursive, Emacs ou o LightTable,
+que é bem simples de utilizar. 
+
+### Siga a sequência
+- [Primeiros passos](https://github.com/victorvoid/aprenda-clojurescript/tree/master/primeiros-passos)
 
 ## License
 
