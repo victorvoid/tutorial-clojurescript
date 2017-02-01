@@ -54,3 +54,11 @@ Para ativar issso, na parte de configuração de usuário coloque: **(setq cloju
   (setq clojure-enable-fancify-symbols t)
 )
 ```
+
+## Evaluate ? 
+
+Veja um pouco desse exemplo, para entender o que é evaluar uma expressão: 
+
+![](https://cdn-images-1.medium.com/max/800/1*SAHOU3R08rd7JQRN903YbQ.gif)
+
+Primeiro faça `SPC m s i` para iniciar o REPL (cider-jack-in) e em seguida é ir em uma expressão, você tem diversas opções, [nesta documentação você vai aprender quais são](https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/clojure). E então vai perceber o quanto isso é muito útil e poderoso.
