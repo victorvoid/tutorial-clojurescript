@@ -1,14 +1,19 @@
-# helloworld
+# Olá mundo
 
-A Clojure library designed to ... well, that part is up to you.
+```clojure
+(ns helloworld.core)
 
-## Usage
+(defn say-hello []
+  (.log js/console "Hello World!"))
 
-FIXME
+(say-hello)
 
-## License
+```
 
-Copyright © 2017 FIXME
+Você pode fazer tanto `(.log js/console "..."` ou `(js/console.log "...."`
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Você tem acesso a qualquer método nativo do javascript através do `js/`, como por exemplo: 
+
+```clojure
+  (js/setTimeout #(swap! seconds inc) 1000)
+```

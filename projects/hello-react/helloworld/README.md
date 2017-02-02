@@ -1,14 +1,15 @@
-# helloworld
+# Olá reagent! 
 
-A Clojure library designed to ... well, that part is up to you.
+ O [Reagent](https://reagent-project.github.io/) é uma biblioteca minimalista para você usar [react](https://facebook.github.io/react/) no clojurescript.
+ 
+ 
+ ```clojure
+ (ns helloworld.core
+  (:require [reagent.core :as reagent]))
 
-## Usage
+(defn app []
+  [:h1 {:class "title"} "Hello People!"])
+   ;; :nomedatag {propriedades} conteúdo
 
-FIXME
-
-## License
-
-Copyright © 2017 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+(reagent/render [app] (js/document.querySelector "#cljs-target"))
+```
