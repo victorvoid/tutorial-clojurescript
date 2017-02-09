@@ -38,10 +38,10 @@
           (.log js/console "drawing...")
           (swap! app-state assoc :fullheight ( str ( + (remove-unit (get dataComponent :height)) (remove-unit (:fullheight @app-state))) "px"))
           (.log js/console (:fullheight @app-state))
-          (reagent/render-component [place-background]
-                                    (. js/document (querySelector ".userPlaceload")))
-          (reagent/render-component [side-right-element (get dataComponent :width) (get dataComponent :height)]
-                                    (. js/document (querySelector ".placeload-background")))))
+          (reagent/render [place-background]
+                                    (. js/document (querySelector ".userPlaceload")))))
+          ;; (reagent/render[side-right-element (get dataComponent :width) (get dataComponent :height)]
+          ;;                           (. js/document (querySelector ".placeload-background")))))
 ;;Using..
 (def placeload (Placeload. ".userPlaceload"))
 (.draw placeload {:width "200px" :height "200px"})
