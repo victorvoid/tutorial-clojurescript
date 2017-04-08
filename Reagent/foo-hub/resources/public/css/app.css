@@ -1,0 +1,115 @@
+.header{
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.header__logo{
+    color: #888;
+    font-size: 25px;
+    text-align: center;
+    line-height: 66px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Search LIST */
+
+.search__container{
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto 0 auto;
+    max-width: 1000px;
+}
+
+.search__container form {
+    max-width: 610px;
+    margin: 0 auto;
+}
+
+.repositories__container, .users__container{
+    width: 68%;
+    float: left;
+}
+
+.found__title{
+    text-align: left;
+    font-size: 14px;
+}
+
+.search__list{
+    padding: 0;
+    margin-top: 40px;
+}
+
+.search__list .search__item{
+    padding-bottom: 40px;
+    text-align: left;
+    list-style: none;
+    align-items: center;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    position: relative;
+}
+
+.search__list .search__item search__user{
+    font-size: 23px;
+    color: blue;
+    text-decoration: none;
+}
+
+.search__list .search__item .search__avatar{
+    max-width: 50px;
+    margin-right: 30px;
+}
+
+.search__list .search__item .search__item__name a{
+        color: #216695;
+        text-decoration: none;
+        transition: all .3s;
+}
+
+.search__list .search__item .repositories__tag .repositories__language{
+    border: 1px solid #d35400;
+    color: #d35400;
+    padding: 2px 20px;
+}
+
+.search__list .search__item .repositories__tag{
+    float: left;
+    margin-right: 20px;
+}
+
+.search__list.users .search__item{
+    display: flex;
+}
+
+.search__list .search__item .repositories__info{
+    float: left;
+}
+.search__menu{
+    width: 220px;
+    float: left;
+    overflow-y: auto;
+}
+
+.search__menu .search__menu--block{
+    list-style: none;
+    padding: 0;
+    margin-right: 40px;
+    margin: 40px auto 0 auto;
+}
+
+.search__menu .search__menu--block .search__menu--item a{
+    text-align: left;
+    text-decoration: none;
+    transition: all .3s;
+    display: block;
+    font-size: 16px;
+    color: #216694;
+    padding: 15px 0px;
+}
+.search__menu .search__menu--block .search__menu--item a span{
+    margin-left: 10px;
+    background: #eee;
+    color: #666;
+    padding: 6px;
+    border-radius: 20px;
+}

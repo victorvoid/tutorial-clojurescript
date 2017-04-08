@@ -14,6 +14,7 @@
                           (. js/document (getElementById "app")))
 
 (defn remove-unit [unit]
+  "remove unit .*"
   (js/parseInt unit))
 
 (defn place-background []
@@ -27,6 +28,17 @@
                  :top (str (- (remove-unit (:fullheight @app-state)) (remove-unit width)) "px")
                  :right 0}}])
 
+(defn appended-container [target]
+  "Append element"
+  (let [id "some"
+        container (.getElementById js/document id)]
+
+    (if container
+      container
+      (.appendChild target (doto (.createElement js/document "div")
+                             (-> (.setAttribute "id" id))))
+      )))
+
 (defn Placeload [container]
   (swap! app-state assoc :container (. js/document (querySelector ".userPlaceload")))
   (this-as this
@@ -39,9 +51,11 @@
           (swap! app-state assoc :fullheight ( str ( + (remove-unit (get dataComponent :height)) (remove-unit (:fullheight @app-state))) "px"))
           (.log js/console (:fullheight @app-state))
           (reagent/render [place-background]
-                                    (. js/document (querySelector ".userPlaceload")))))
+                          (appended-container (. js/document (querySelector ".userPlaceload"))))))
+
           ;; (reagent/render[side-right-element (get dataComponent :width) (get dataComponent :height)]
           ;;                           (. js/document (querySelector ".placeload-background")))))
 ;;Using..
 (def placeload (Placeload. ".userPlaceload"))
+(.draw placeload {:width "200px" :height "200px"})
 (.draw placeload {:width "200px" :height "200px"})
