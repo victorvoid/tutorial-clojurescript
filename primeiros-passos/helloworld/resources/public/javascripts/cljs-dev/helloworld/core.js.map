@@ -1,1 +1,0 @@
-{"version":3,"file":"\/home\/victormartins\/Documents\/repos\/clojure-reagent\/helloworld\/resources\/public\/javascripts\/cljs-dev\/helloworld\/core.js","sources":["core.cljs"],"lineCount":9,"mappings":";AAAA;;AAEA,4BAAA,5BAAMA;AAAN,AACE,mBAAA,ZAAMC;;AAER,AAACD","names":["helloworld.core\/say-hello","js\/console"]}
